@@ -1,0 +1,14 @@
+[build]
+  command   = "npm install -g yarn && yarn build"
+  functions = "out_functions"
+  publish   = "out_publish"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "object-src 'none'; default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' res.cloudinary.com; frame-ancestors 'self';"
+    Strict-Transport-Security = "max-age=3124138248000; includeSubDomains; preload;"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "same-origin"
