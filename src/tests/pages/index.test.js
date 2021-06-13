@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 
-import Index from '../../pages/index';
+import Home from '../../pages/index';
 
-describe('Index', () => {
+describe('Home', () => {
   it('renders without crashing', () => {
-    render(<Index />);
-    expect(screen.getByText(/next.js/i)).toBeInTheDocument();
+    render(<Home />);
+    expect(screen.getByText(/Douglas.js/i)).toBeInTheDocument();
   });
 });

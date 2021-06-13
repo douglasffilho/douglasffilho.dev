@@ -6,12 +6,12 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Template Next.js</title>
+        <title>What Douglas can do for you</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Heading>Template Next.js</Heading>
+        <Heading>Douglas.js</Heading>
       </main>
     </div>
   );

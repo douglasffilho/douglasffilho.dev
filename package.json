@@ -1,12 +1,12 @@
 {
-  "name": "template-nextjs",
+  "name": "douglasffilho.dev",
   "version": "0.0.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/douglasffilho/template-nextjs.git"
+    "url": "git+https://github.com/douglasffilho/douglasffilho.dev.git"
   },
-  "keywords": [],
+  "keywords": ["Douglas", "Filho", "Dev"],
   "author": "Douglas Filho",
   "scripts": {
     "prepare": "husky install",
@@ -17,8 +17,7 @@
     "lint:fix": "eslint --fix .",
     "test": "jest --maxWorkers=50% --forceExit --env=jsdom --collectCoverage --detectOpenHandles",
     "test:dev": "jest --maxWorkers=50% --watch --env=jsdom --updateSnapshot --collectCoverage --detectOpenHandles",
-    "test:ci": "jest --ci --no-cache",
-    "coverage": "yarn t && open coverage/lcov-report/index.html",
+    "coverage": "yarn test && google-chrome-stable coverage/lcov-report/index.html",
     "clean": "chmod +x clean && ./clean"
   },
   "lint-staged": {
