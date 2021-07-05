@@ -21,6 +21,7 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
     '~/components/(.+)': '<rootDir>/src/components/$1',
+    '\\.svg$': '<rootDir>/jest.svg.js',
   },
   modulePaths: ['<rootDir>/src'],
   moduleDirectories: ['.', 'src', 'node_modules'],

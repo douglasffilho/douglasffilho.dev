@@ -1,19 +1,10 @@
-import Head from 'next/head';
-
-import { Heading } from '~/components/Heading';
+import { PageTemplate } from 'components';
 
 const Home = () => {
   return (
-    <div>
-      <Head>
-        <title>What Douglas can do for you</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Heading>Douglas.js</Heading>
-      </main>
-    </div>
+    <PageTemplate>
+      <h1>Douglas</h1>
+    </PageTemplate>
   );
 };
 

@@ -6,7 +6,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "object-src 'none'; default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' res.cloudinary.com; frame-ancestors 'self';"
+    Content-Security-Policy = "object-src 'self'; default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' res.cloudinary.com; frame-ancestors 'self';"
     Strict-Transport-Security = "max-age=3124138248000; includeSubDomains; preload;"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "SAMEORIGIN"

@@ -8,7 +8,7 @@ module.exports = {
           {
             key: 'Content-Security-Policy',
             value:
-              "object-src 'none'; default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' res.cloudinary.com; frame-ancestors 'self';",
+              "object-src 'self'; default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' res.cloudinary.com; frame-ancestors 'self';",
           },
           {
             key: 'Strict-Transport-Security',
@@ -33,5 +33,13 @@ module.exports = {
         ],
       },
     ];
+  },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
   },
 };

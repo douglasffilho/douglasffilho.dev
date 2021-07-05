@@ -1,0 +1,10 @@
+.PageTemplate {
+  padding: 0.5rem 1rem 0rem 1rem;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.PageTemplate .Icons {
+  grid-template-columns: repeat(auto-fit, 8.5%);
+  height: 1rem;
+}

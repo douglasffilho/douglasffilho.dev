@@ -6,7 +6,11 @@
     "type": "git",
     "url": "git+https://github.com/douglasffilho/douglasffilho.dev.git"
   },
-  "keywords": ["Douglas", "Filho", "Dev"],
+  "keywords": [
+    "Douglas",
+    "Filho",
+    "Dev"
+  ],
   "author": "Douglas Filho",
   "scripts": {
     "prepare": "husky install",
@@ -28,6 +32,7 @@
   },
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.14.5",
+    "@svgr/webpack": "^5.5.0",
     "babel-jest": "^27.0.2",
     "next": "10.2.3",
     "react": "17.0.2",
